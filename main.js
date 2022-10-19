@@ -70,7 +70,7 @@ function onSelect(){
     if(reticle.visible){
         if(vinthai){
             vinthai.position.setFromMatrixPosition(reticle.matrix);
-            vinthai.scale.set(1,1,1);
+            vinthai.scale.set(0.8,0.8,0.8);
             scene.add(vinthai);
         }
     }
