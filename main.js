@@ -32,6 +32,9 @@ document.body.appendChild(ARButton.createButton(renderer,{
 }
 ));
 
+const ambientLight = new THREE.AmbientLight(0x404040);
+scene.add(ambientLight);
+
 //light
 const directionalLight = new THREE.DirectionalLight( 0xffffff, 1 );
 directionalLight.position.set(0,0.3,0.5);
@@ -67,7 +70,7 @@ function onSelect(){
     if(reticle.visible){
         if(vinthai){
             vinthai.position.setFromMatrixPosition(reticle.matrix);
-            vinthai.scale.set(0.5,0.5,0.5);
+            vinthai.scale.set(1,1,1);
             scene.add(vinthai);
         }
     }
