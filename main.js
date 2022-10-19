@@ -67,7 +67,7 @@ function onSelect(){
     if(reticle.visible){
         if(vinthai){
             vinthai.position.setFromMatrixPosition(reticle.matrix);
-            vinthai.scale.set(0.005,0.005,0.005);
+            vinthai.scale.set(0.5,0.5,0.5);
             scene.add(vinthai);
         }
     }
